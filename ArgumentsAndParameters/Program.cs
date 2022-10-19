@@ -1,0 +1,17 @@
+﻿
+Console.WriteLine("Enter a word");
+
+string userInput = Console.ReadLine();
+
+printAnyWord(userInput);  //userintput on argument
+
+
+
+static void printAnyWord(string anyString) //anystring - parameter
+{
+    anyString = anyString.ToUpper();
+    for(int i = 0; i < 5; i++)
+    {
+        Console.WriteLine(anyString);
+    }
+}
